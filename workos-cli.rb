@@ -5,20 +5,20 @@
 class WorkosCli < Formula
   desc ""
   homepage "https://github.com/workos/workos-cli"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/workos/workos-cli/releases/download/v0.3.0/workos_cli_Darwin_x86_64.tar.gz"
-      sha256 "1e6cf4ded9983f828638222736f3b60a3c2f8cca9b124a7c777cb2d3a0ec945c"
+      url "https://github.com/workos/workos-cli/releases/download/v0.3.1/workos_cli_Darwin_x86_64.tar.gz"
+      sha256 "66603450cc0003e2d791a1409d5817e3a1411c0bf6515f5a68c1266541b3ab77"
 
       def install
         bin.install "bin/workos"
       end
     end
     on_arm do
-      url "https://github.com/workos/workos-cli/releases/download/v0.3.0/workos_cli_Darwin_arm64.tar.gz"
-      sha256 "06e7c24879b92181b41b6f5497f0eafc281a5cef3125f586504398b306373858"
+      url "https://github.com/workos/workos-cli/releases/download/v0.3.1/workos_cli_Darwin_arm64.tar.gz"
+      sha256 "f112081624600d983bae23d228bdca7bcfc1a95fe2dc320605128552e8eb8a8e"
 
       def install
         bin.install "bin/workos"
@@ -29,8 +29,8 @@ class WorkosCli < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/workos/workos-cli/releases/download/v0.3.0/workos_cli_Linux_x86_64.tar.gz"
-        sha256 "4ccc26787291e8a6cba2cb620809c0811625c89d53e9e140314109a863e65563"
+        url "https://github.com/workos/workos-cli/releases/download/v0.3.1/workos_cli_Linux_x86_64.tar.gz"
+        sha256 "816766d691ae172dfd5d87a73d7f42784247b66f066f5d297a75f4856d77cc95"
 
         def install
           bin.install "bin/workos"
@@ -39,8 +39,8 @@ class WorkosCli < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/workos/workos-cli/releases/download/v0.3.0/workos_cli_Linux_armv6.tar.gz"
-        sha256 "049f33bf3913f391e842d6fa355b4349ce786c45a394d47575202f6b98bd39e5"
+        url "https://github.com/workos/workos-cli/releases/download/v0.3.1/workos_cli_Linux_armv6.tar.gz"
+        sha256 "b1db54e342cb995a89794a0f38b2f496064a7fb3159880d41dfabeb6e895d925"
 
         def install
           bin.install "bin/workos"
@@ -49,8 +49,8 @@ class WorkosCli < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/workos/workos-cli/releases/download/v0.3.0/workos_cli_Linux_arm64.tar.gz"
-        sha256 "5ad13120b737261b094ea73826de53a29e06e4b6357627af6a93e4502447561c"
+        url "https://github.com/workos/workos-cli/releases/download/v0.3.1/workos_cli_Linux_arm64.tar.gz"
+        sha256 "38894e25f4682c78f40386e631b300bfc275b24b26bba69f77a2c1185e5bf43c"
 
         def install
           bin.install "bin/workos"
