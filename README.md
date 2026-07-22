@@ -2,5 +2,5 @@
 
 ## WorkOS CLI
 ```bash
-brew install workos/tap/workos-cli
+brew install workos/tap/workos
 ```
