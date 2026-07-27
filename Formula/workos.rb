@@ -13,18 +13,10 @@ class Workos < Formula
     on_arm do
       url "https://github.com/workos/cli/releases/download/v0.20.1/workos-darwin-arm64"
       sha256 "acf024ba6cbb1b8939c2d1c8fd98dc5e50c818367d58c2e19ecdad9d7f23721a"
-
-      def install
-        bin.install "workos-darwin-arm64" => "workos"
-      end
     end
     on_intel do
       url "https://github.com/workos/cli/releases/download/v0.20.1/workos-darwin-x64"
       sha256 "17bef851383aac7ac543d61f9ef219f0f64c63d585b45384838198a1e736666b"
-
-      def install
-        bin.install "workos-darwin-x64" => "workos"
-      end
     end
   end
 
@@ -32,19 +24,19 @@ class Workos < Formula
     on_arm do
       url "https://github.com/workos/cli/releases/download/v0.20.1/workos-linux-arm64"
       sha256 "51cb115e91f39e2ac3d78ded94145c19d9ebfe1a2b164452702e4b468bb6be25"
-
-      def install
-        bin.install "workos-linux-arm64" => "workos"
-      end
     end
     on_intel do
       url "https://github.com/workos/cli/releases/download/v0.20.1/workos-linux-x64"
       sha256 "034ff718d7e3c13c57bd9533f2273e0ff5f686b9961babbd9a059c83d8452d21"
-
-      def install
-        bin.install "workos-linux-x64" => "workos"
-      end
     end
+  end
+
+  # Exactly one of the four assets above is downloaded, so the glob resolves to
+  # that platform's binary; matches Formula/workos-emulate.rb in the same tap.
+  def install
+    binary = Dir["workos-*"].first
+    odie "No workos-* binary in the staging directory" if binary.nil?
+    bin.install binary => "workos"
   end
 
   test do
