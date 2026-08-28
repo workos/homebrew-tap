@@ -6,28 +6,28 @@
 class WorkosEmulate < Formula
   desc "Local WorkOS API emulator for tests and development"
   homepage "https://github.com/workos/emulate"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/workos/emulate/releases/download/v0.10.0/workos-emulate-darwin-arm64"
-      sha256 "67dd0db8460e1a3c10d87730f64dc31105e536d4f6d9c565baf8dd159c526d9b"
+      url "https://github.com/workos/emulate/releases/download/v0.11.0/workos-emulate-darwin-arm64"
+      sha256 "eed79c422756f45672dea7574f269d644a853fd15a4268ab79a84af11253479c"
     end
     on_intel do
-      url "https://github.com/workos/emulate/releases/download/v0.10.0/workos-emulate-darwin-x64"
-      sha256 "fa49daebf2d4bb7ed800718c6207a332ff3c38d65c2ab81921ad157bc159f170"
+      url "https://github.com/workos/emulate/releases/download/v0.11.0/workos-emulate-darwin-x64"
+      sha256 "ba2dc980ff38c2c832e35f6cc8fbf7e8eac4210322e0ba97dea428673711715a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/workos/emulate/releases/download/v0.10.0/workos-emulate-linux-arm64"
-      sha256 "79bc27d05d60f7d7d5756d70bdaca4fe13a085ed209edf2f81fcadba5b104842"
+      url "https://github.com/workos/emulate/releases/download/v0.11.0/workos-emulate-linux-arm64"
+      sha256 "3a908dcd02e33da5eefe87b0b9db9f20186259f79056fff4431c944e30f81789"
     end
     on_intel do
-      url "https://github.com/workos/emulate/releases/download/v0.10.0/workos-emulate-linux-x64"
-      sha256 "66fe2ca07ffa1ebf26393d2d288264284600ebd2a0979a59621516557bc790d0"
+      url "https://github.com/workos/emulate/releases/download/v0.11.0/workos-emulate-linux-x64"
+      sha256 "dfb1943a2d06906730f02a127b0415f1b1b78a55c22598df35e73e47af06c1e8"
     end
   end
 
