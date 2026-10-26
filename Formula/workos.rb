@@ -6,28 +6,28 @@
 class Workos < Formula
   desc "Install AuthKit integrations and manage WorkOS resources"
   homepage "https://github.com/workos/cli"
-  version "0.23.0"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/workos/cli/releases/download/v0.23.0/workos-darwin-arm64"
-      sha256 "bb786abbabe49e9aea472ac57be2638bceae38ef887059d71d348a4ea302aeef"
+      url "https://github.com/workos/cli/releases/download/v0.24.0/workos-darwin-arm64"
+      sha256 "caac7831200a2970a5f842c1fc2836b91b84035ef2660f45ee39811b00863735"
     end
     on_intel do
-      url "https://github.com/workos/cli/releases/download/v0.23.0/workos-darwin-x64"
-      sha256 "4b7ada55298d12e83f03691b258840b0d3152c43b37555ef887ead972c2de098"
+      url "https://github.com/workos/cli/releases/download/v0.24.0/workos-darwin-x64"
+      sha256 "f61fd5b4e3fe08829dbd19be357c376a49fc637a7a172a453988f7405a14ac12"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/workos/cli/releases/download/v0.23.0/workos-linux-arm64"
-      sha256 "8d665f65c9582bb74ec253b48337f8b11054fd866ecf71b2c7ac89907dc83a51"
+      url "https://github.com/workos/cli/releases/download/v0.24.0/workos-linux-arm64"
+      sha256 "1eb309ddff3c69543255b6727556ebc7c4d09d5fa0a4b192e5b2f26f599c4c28"
     end
     on_intel do
-      url "https://github.com/workos/cli/releases/download/v0.23.0/workos-linux-x64"
-      sha256 "399437b6c6685b7c50e619cfd85382cc7724c3ecf43c5ec050a8ed6be2201aee"
+      url "https://github.com/workos/cli/releases/download/v0.24.0/workos-linux-x64"
+      sha256 "e9031f734662b201b53db2260a5871f43a8f38d6440e647586463058a05576e2"
     end
   end
 
